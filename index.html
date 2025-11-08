@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyZone | Learn Smarter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Study<span>Zone</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button id="darkModeBtn">🌙</button>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Study Smart with <span>StudyZone</span> 📘</h1>
+      <p>Explore free notes, tutorials, and materials anytime, anywhere. Designed to make learning simple and enjoyable.</p>
+      <a href="courses.html" class="btn">Explore Courses</a>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="🔍 Search your course..." />
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="web">Web Development</option>
+      <option value="programming">Programming</option>
+      <option value="data">Data Science</option>
+    </select>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <h2>Popular Courses</h2>
+    <div class="course-container">
+
+      <div class="course-card" data-category="web">
+        <h3>HTML & CSS</h3>
+        <p>Learn how to create modern, responsive websites.</p>
+        <a href="https://www.w3schools.com/html/" target="_blank" class="btn-small">View Material</a>
+      </div>
+
+      <div class="course-card" data-category="web">
+        <h3>JavaScript</h3>
+        <p>Make your websites dynamic and interactive.</p>
+        <a href="https://www.w3schools.com/js/" target="_blank" class="btn-small">View Material</a>
+      </div>
+
+      <div class="course-card" data-category="programming">
+        <h3>Python</h3>
+        <p>Master Python for software and web development.</p>
+        <a href="https://docs.python.org/3/tutorial/" target="_blank" class="btn-small">View Material</a>
+      </div>
+
+      <div class="course-card" data-category="data">
+        <h3>Data Structures</h3>
+        <p>Understand algorithms and problem-solving techniques.</p>
+        <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" class="btn-small">View Material</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-home">
+    <h2>Why Choose StudyZone?</h2>
+    <p>
+      StudyZone helps students and professionals enhance their learning experience with easy-to-understand materials,
+      free resources, and modern web design. Our goal is to make education more interactive, engaging, and accessible to all.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2025 <span>StudyZone</span> | Learn, Grow & Succeed with Confidence | Empowering Learners Worldwide Through Free, Quality & Interactive Study Materials 🚀
+    </p>
+    <p>Created By Bhargvi Bhatiya</p>
+  </footer>
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>

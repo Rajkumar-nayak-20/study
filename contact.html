@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StudyZone - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="logo"><a href="index.html">Study<span>Zone</span></a></div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="courses.html" class="nav-item">Courses</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="contact.html" class="nav-item active">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <button id="darkModeBtn" class="icon-btn">🌙</button>
+          <button class="menu-icon icon-btn" id="menuBtn">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main container">
+      <section class="contact reveal">
+        <h2>Get in touch</h2>
+        <form id="contactForm" class="contact-form" onsubmit="submitContact(event)">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Your email" required />
+          <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formMsg" class="small" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 StudyZone |        <p>| Learn, Grow & Succeed with Confidence | Empowering Learners Worldwide Through Free, Quality & Interactive Study Materials 🚀</p>
+</p>
+      </div>
+      <p class="small" color="black"><b>created ❤ by Bhargvi Bhatiya</b></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

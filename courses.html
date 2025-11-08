@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StudyZone - Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="logo"><a href="index.html">Study<span>Zone</span></a></div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-item">Home</a></li>
+          <li><a href="courses.html" class="nav-item active">Courses</a></li>
+          <li><a href="about.html" class="nav-item">About</a></li>
+          <li><a href="contact.html" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <button id="darkModeBtn" class="icon-btn">🌙</button>
+          <button class="menu-icon icon-btn" id="menuBtn">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main container">
+      <section class="search-area reveal">
+        <input id="searchInput" class="search-input" type="text" placeholder="🔍 Search courses (eg. Python, HTML)..." oninput="searchCourses()" />
+        <select id="categoryFilter" class="select" onchange="filterCourses()">
+          <option value="all">All categories</option>
+          <option value="web">Web Development</option>
+          <option value="programming">Programming</option>
+          <option value="data">Data Science</option>
+        </select>
+      </section>
+
+      <section class="courses-grid reveal" id="courseContainer">
+        <!-- Course cards: click opens relevant material -->
+        <article class="course-card" data-category="web" onclick="openMaterial('https://www.w3schools.com/html/')">
+          <h3>HTML &amp; CSS</h3>
+          <p>Structure and style responsive web pages.</p>
+          <div class="card-links">
+            <a href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer">Notes</a>
+            <a href="https://www.youtube.com/results?search_query=html+tutorial" target="_blank" rel="noreferrer">Videos</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="web" onclick="openMaterial('https://www.w3schools.com/js/')">
+          <h3>JavaScript</h3>
+          <p>Make pages interactive and dynamic.</p>
+          <div class="card-links">
+            <a href="https://www.w3schools.com/js/" target="_blank" rel="noreferrer">Notes</a>
+            <a href="https://www.youtube.com/results?search_query=javascript+tutorial" target="_blank" rel="noreferrer">Videos</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="programming" onclick="openMaterial('https://docs.python.org/3/tutorial/')">
+          <h3>Python</h3>
+          <p>General purpose programming & scripting.</p>
+          <div class="card-links">
+            <a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noreferrer">Notes</a>
+            <a href="https://www.youtube.com/results?search_query=python+tutorial" target="_blank" rel="noreferrer">Videos</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="programming" onclick="openMaterial('https://www.programiz.com/c-programming')">
+          <h3>C Programming</h3>
+          <p>Fundamentals and low-level programming concepts.</p>
+          <div class="card-links">
+            <a href="https://www.programiz.com/c-programming" target="_blank" rel="noreferrer">Notes</a>
+            <a href="https://www.youtube.com/results?search_query=c+programming+tutorial" target="_blank" rel="noreferrer">Videos</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="data" onclick="openMaterial('https://www.geeksforgeeks.org/data-structures/')">
+          <h3>Data Structures</h3>
+          <p>Arrays, lists, trees, graphs and more.</p>
+          <div class="card-links">
+            <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" rel="noreferrer">Notes</a>
+            <a href="https://www.youtube.com/results?search_query=data+structures+tutorial" target="_blank" rel="noreferrer">Videos</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="data" onclick="openMaterial('https://www.ibm.com/topics/machine-learning')">
+          <h3>Machine Learning</h3>
+          <p>Intro to ML algorithms and workflows.</p>
+          <div class="card-links">
+            <a href="https://www.ibm.com/topics/machine-learning" target="_blank" rel="noreferrer">Notes</a>
+            <a href="https://www.youtube.com/results?search_query=machine+learning+tutorial" target="_blank" rel="noreferrer">Videos</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 StudyZone | | Learn, Grow & Succeed with Confidence | Empowering Learners Worldwide Through Free, Quality & Interactive Study Materials 🚀</p>
+      </div>
+      <p class="small">created ❤ by Bhargvi Bhatiya</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
